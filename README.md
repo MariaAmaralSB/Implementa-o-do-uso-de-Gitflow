@@ -28,6 +28,7 @@ Junto aos branches master e develop utilizamos outros branches de suporte, para 
 * Branches de melhorias (features)
 * Branches de lançamento (release)
 * Branches de correções (hotfix)
+
 Cada tipo de branch tem um próposito específico e segue regras de quais branches devem ser originadas e mescladas.
 Branches de melhoria deve ser criado a partir do develop, deverá ser mesclado de volta para o develop.
 A convensão de nome: qualquer nome exceto master, develop, release/, ou hotfix/.
