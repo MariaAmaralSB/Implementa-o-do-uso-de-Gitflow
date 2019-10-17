@@ -15,7 +15,7 @@ Um repositório nada mais é que uma pasta onde estão todos os arquivos do proj
 #Branches
 
 As branches são as ramificações do projeto onde será feito o versionamento do projeto. O repositório central possui dois branches principais com vida infinita:
-* Master
+* master
 * develop
 
 O branch master é o branch principal, a HEAD do projeto, nele há somente as versões que estão em produção.
@@ -38,3 +38,7 @@ Branches de melhorias são usados para desenvoler novas funcionalidades para o p
 
 Deve ser criada a partir do develop, deverá ser voltada para o master e o develop. Convensão de nome: release/2019.1
 Branches de release são usadas para a preparação do próximo release de produção. Nessa branch não é permitida pequenas correções e atualizações de versões de arquivos. Na criação da branch de release é decidido qual versão o projeto terá, até este momento a branch develop reflete as alterações da próxima versão, independente de qual for. Esta decisão é feita na criação do branch de lançamento e segue as convensões de versionamento do projeto.
+
+#Branches de correções 
+
+Deve ser criado a partir do master, deverá ser voltada para develop e master. Convensão de nome: hotfix/ .Branches de correções são muito parecidos com branches de release em sua concepção, pois tem o mesmo objetivo de preparar uma versão para a produção, embora não planejada. Eles surgem da necessidade de agir imediatamente em uma versão de produção já implantada. Quando um bug crítico ocorre em uma versão de produção já implantada. Quando um bug crítico ocorre em produção um branch de correção precisa ser criado a partir da tag correspondente. A ideia é que o time que está trabalhando na próxima versão no branch develop possa continuar enquanto alguém prepara uma correção. 
